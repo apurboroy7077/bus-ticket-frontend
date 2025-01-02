@@ -1,7 +1,14 @@
 import { create } from "zustand";
-
+type userDataType = {
+  username: string;
+  email: string;
+  role: string;
+  createdAt: number;
+  updatedAt: number;
+  _id: string;
+};
 type useBasicType = {
-  userData: any;
+  userData: null | userDataType;
   setUserData: (data: any) => void;
 };
 
