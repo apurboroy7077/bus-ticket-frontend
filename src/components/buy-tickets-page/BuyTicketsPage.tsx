@@ -40,9 +40,7 @@ const BusTicketPage = () => {
             <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
               Bus Ticket Sales
             </h1>
-            <div>
-              <button onClick={handleLoadBusesData}>Bus</button>
-            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 w-full max-w-screen-lg">
               {busesData?.map((bus) => (
                 <TicketCard key={Math.random()} bus={bus} />
